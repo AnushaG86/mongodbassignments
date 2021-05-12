@@ -1,0 +1,4 @@
+
+[{$match: {
+  "grades.score":{$mod:[7,0]}
+}}]

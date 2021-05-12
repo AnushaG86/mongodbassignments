@@ -1,0 +1,5 @@
+1.db.movies.find({$text: {$search: "Bilbo"}})
+2.db.movies.find({$text: {$search: "Gandalf"}})
+3.db.movies.find({$text: {$search: "Bilbo -Gandalf"}})
+4.db.movies.find({$text: {$search: "dwarves hobbit"}})
+5.db.movies.find({$text: {$search: "gold dragon"}})

@@ -1,0 +1,5 @@
+[{$match: {
+  $or:[{name:"Wil^"},{$and:[{cuisine:{$ne:"American "}},{cuisine:{$ne:"Chinese"}}]}]
+}}, {$project: {
+  restaurant_id:1,name:1,borough:1,cuisine:1
+}}]

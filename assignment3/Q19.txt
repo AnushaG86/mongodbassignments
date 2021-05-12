@@ -1,0 +1,5 @@
+[{$match: {
+  borough:{$nin:["Queens","State Island","Bronxor"]}
+}}, {$project: {
+  restaurant_id:1,name:1,cuisine:1
+}}]

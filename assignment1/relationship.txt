@@ -1,0 +1,7 @@
+1.db.users.find()
+2.db.posts.find()
+3.db.posts.find({username: "GoodGuyGreg"})
+4.db.posts.find({username: "ScumbagSteve"})
+5.db.comments.find()
+6.db.comments.find({username: "GoodGuyGreg"})
+7.db.comments.find({username: "ScumbagSteve"})

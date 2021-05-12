@@ -1,0 +1,16 @@
+[{$addFields: {
+  score: "$grades.score"
+}}, {$unwind: {
+  path:"$score",
+  includeArrayIndex: 'scoresum',
+  preserveNullAndEmptyArrays: true
+}}, {$group: {
+  _id: "$_id",
+  totalsum: {
+    $sum: "$score"
+  }
+}}, {$sort: {
+  "totalsum": -1
+}}, {$match: {
+  "totalsum":{$gt:90}
+}}]

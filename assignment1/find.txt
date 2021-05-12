@@ -1,0 +1,6 @@
+1.db.movies.find()
+2.db.movies.find({writer: "Quentin Tarantino"})
+3.db.movies.find({actors: "Brad Pitt"})
+4.db.movies.find({franchise: "The Hobbit"})
+5db.movies.find({$and: [{year: {$gt: 1900}}, {year: {$lt: 2000}}]})
+6.db.movies.find({$or: [{year: {$lt: 2000}}, {year: {$gt: 2010}}]})

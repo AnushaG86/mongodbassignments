@@ -1,0 +1,5 @@
+[{$match: {
+  borough:"Bronx"
+}}, {$match: {
+  $or:[{cuisine:"American "},{cuisine:"Chinese"}]
+}}]

@@ -1,0 +1,7 @@
+[{$match: {
+  "grades.grade":"A"
+}}, {$match: {
+  "grades.score":10
+}}, {$match: {
+  "grades.date":(ISODate('2014-08-11T00:00:00Z'))
+}}]

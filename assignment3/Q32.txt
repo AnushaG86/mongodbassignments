@@ -1,0 +1,5 @@
+[{$match: {
+  name:{$regex:"^Mad"}
+}}, {$project: {
+  name:1,borough:1,"address.coord":1,cuisine:1
+}}]

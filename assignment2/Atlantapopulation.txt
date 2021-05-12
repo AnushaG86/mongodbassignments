@@ -1,0 +1,24 @@
+1.[{$match: {
+  city:"ATLANTA"
+}}, {$match: {
+  state:"GA"
+}}]
+
+2.[{$group: {
+  _id: "$city",
+  total: {
+    $sum:1
+  }
+}}, {$match: {
+  _id:"ATLANTA"
+}}]
+
+
+3.[{$group: {
+  _id: "$city",
+  total: {
+    $sum: "$pop"
+  }
+}}, {$match: {
+  _id:"ATLANTA"
+}}]

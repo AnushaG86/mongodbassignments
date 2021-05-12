@@ -1,0 +1,2 @@
+1.db.movies.remove({title: "Pee Wee Herman's Big Adventure"})
+2.db.movies.remove({title: "Avatar"})

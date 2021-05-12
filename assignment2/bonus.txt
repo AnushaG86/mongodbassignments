@@ -1,0 +1,15 @@
+1.[{$group: {
+  _id:{state:"$state"},
+  totalpop: {
+    $avg:"$pop"
+  }
+}}]
+
+2.[{$group: {
+  _id:{state:"$state"},
+  totalpop: {
+    $avg:"$pop"
+  }
+}}, {$sort: {
+  totalpop: -1
+}}, {$limit: 3}]
